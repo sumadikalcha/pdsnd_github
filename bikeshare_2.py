@@ -225,8 +225,8 @@ def displayData (df, row_num, city):
             print("Birth Year : {}".format(df.iloc[row_num]['Birth Year']))
         else:
             #printing None for the data where not present
-            print("Gender : None ,")
-            print("Birth Year : None")
+            print("Gender : Not Provided ,")
+            print("Birth Year : Not Provided")
         print("]\n")
         row_num += 1
         i+=1
