@@ -169,9 +169,9 @@ def trip_duration_stats(df):
     trip_mean = df['Trip Duration'].mean()
 
     # display total travel time
-    print ("The Total trip duration is : ", trip_duration)
+    print ("The Total trip duration is : Total : {} Seconds, [{} hours, {} mins and {} seconds]".format(trip_duration, trip_duration//3600, (trip_duration%3600)//60, (trip_duration%3600)%60 ))
     # display mean travel time
-    print ("\nThe mean travel time is : ", trip_mean)
+    print ("\nThe mean travel time is : {} Seconds [{} hours, {} mins and {} seconds]".format(trip_mean, trip_mean//3600, (trip_mean%3600)//60, (trip_mean%3600)%60))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -225,8 +225,8 @@ def displayData (df, row_num, city):
             print("Birth Year : {}".format(df.iloc[row_num]['Birth Year']))
         else:
             #printing None for the data where not present
-            print("Gender : None ,")
-            print("Birth Year : None")
+            print("Gender : Not Provided ,")
+            print("Birth Year : Not Provided")
         print("]\n")
         row_num += 1
         i+=1
